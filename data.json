@@ -1,0 +1,162 @@
+[
+    {
+        "skill": {
+            "name": "HTML",
+            "illustration": "image/icone_html.png",
+            "text": "With HTML, I can structure your websites by using various tags wisely. HTML is the first language I learned; it is the foundation of all websites. By mastering this foundation, I can ensure an appropriate structure for any website and provide clear and precise classes for CSS."
+        }
+    },
+    {
+        "skill": {
+            "name": "CSS",
+            "illustration": "image/icone_css.png",
+            "text": "CSS allows me to style your websites while perfectly adhering to the requested design guidelines. Whether it's mobile or desktop sites, they will always be perfectly optimized to adapt to all screen sizes. Additionally, I can add CSS animations to make the website more dynamic."
+        }
+    },
+    {
+    "skill": {
+        "name": "JavaScript",
+        "illustration": "image/icone_js.png",
+        "text": "By using JavaScript, I can create animations that are impossible with CSS alone. I can also use this language to work with data, enhance forms, add styling, and more. JavaScript allows me to be completely versatile."
+    }
+    },
+    {
+        "skill": {
+            "name": "PHP",
+            "illustration": "image/icone_php.svg",
+            "text": "PHP allows me to communicate between the database and the website. With it, I can create dynamic websites with secure login systems. PHP also enables me to develop online booking systems and code using the MVC architecture."
+        }
+    },
+    {
+        "skill": {
+            "name": "WordPress",
+            "illustration": "image/icone_wp.png",
+            "text": "WordPress is a tool that allows you to create websites without the need for coding. Knowing how to install and configure it, I can create WordPress sites and edit source files to make precise modifications that meet the client's expectations."
+        }
+    },
+    {
+        "skill": {
+            "name": "Chart.js",
+            "illustration": "image/icone_chart.png",
+            "text": "Chart.js is a library that allows me to create all kinds of charts. It is very easy to customize them using the properties provided by the library, which is accessible online. With this library, I can easily create data visualizations and tailor them to specific needs."
+        }
+    },
+    {
+        "skill": {
+            "name": "Aos.js",
+            "illustration": "image/icone_aos.png",
+            "text": "Aos.js is also an online library, used to create scroll animations. Aos.js makes it easy to create dynamic displays with great simplicity. Knowing how to modify its properties to further customize the predefined animations, this library is simple yet highly effective."
+        }
+    },
+    {
+        "skill": {
+            "name": "Gsap.js",
+            "illustration": "image/icone_gsap.svg",
+            "text": "A third library: Gsap.js. This library is a bit more complex to use than Aos.js and requires more knowledge about its functionality. It allows for the creation of a wide range of animations, whether on SVG images, text, or scroll effects. It is versatile and accessible."
+        }
+    },
+    {
+        "skill": {
+            "name": "GIT",
+            "illustration": "image/icone_git.png",
+            "text": "GIT is the tool that allows collaboration with other developers. It is essential for teamwork. With GIT, we update the code online and keep ourselves up to date with the progress of others. Knowing the basics of GIT is crucial."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Figma",
+            "illustration": "image/icone_figma.svg",
+            "text": "Figma is a highly effective digital creation tool for designing website mockups or social media posts. With a solid understanding of this platform, I am able to create social media post prototypes and website mockups."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Canva",
+            "illustration": "image/icone_canva.png",
+            "text": "Like Figma, Canva is also a digital creation tool. Canva allows you to create flowcharts, social media posts, slides, PDF documents, video edits, and more. While Canva doesn't offer as much freedom as Figma in creation, it is very versatile and provides great support for the user."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "PhotoShop",
+            "illustration": "image/icone_ps.png",
+            "text": "With Photoshop, I can manage images to their fullest potential. I can reduce their size, weight, adjust color settings, and more. All of these tasks are easy to perform with this software, including changing formats while maintaining good image quality."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "InDesign",
+            "illustration": "image/icone_id.png",
+            "text": "InDesign is very useful for creating PRINT documents. Whether it's posters or other materials, it's certainly one of the most comprehensive tools. However, it is becoming somewhat obsolete and isn't as intuitive as Figma."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Creativity",
+            "illustration": "image/icone_crea.png",
+            "text": "With a creative mindset, I know how to produce and create using various sources of inspiration. While I enjoy having original designs, I always stay on a professional path to ensure my work remains accessible and appealing to clients."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Flexibility",
+            "illustration": "image/icone_flex.png",
+            "text": "Because it's important to adapt to any situation, I know how to switch from one project to another and work on multiple tasks at the same time. Whether it's for teamwork or individual work, I can easily collaborate with others or work alone."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Autonomy",
+            "illustration": "image/icone_auto.png",
+            "text": "It is important to take initiative and not wait for requests to improve projects or get ahead of what's to be done. Always thinking ahead, I always have ideas to contribute and I am not afraid to share them."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Listening",
+            "illustration": "image/icone_list.png",
+            "text": "In teamwork, it is very important to listen to the opinions of others. Whether as a team member or as a project manager, it is essential to pay close attention to everyone so that each person feels heard. Listening is crucial for the good harmony of a group."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Eloquence",
+            "illustration": "image/icone_elo.png",
+            "text": "In addition to knowing how to listen, it is very important to express oneself properly in oral communication. Whether it's to sell a product, explain a project, resolve conflicts... oral communication is an art that I master perfectly and is useful in many situations."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Respect",
+            "illustration": "image/icone_resp.png",
+            "text": "Even if opinions differ, it is very important to respect the work and the individuals of others. A group that does not respect itself is destined to collapse, regardless of the individual abilities of each member."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Communication",
+            "illustration": "image/icone_comm.png",
+            "text": "One should never hesitate to address issues within a group before they take up too much space and hinder the progress of the project. Communication also means keeping other group members regularly informed about the progress of the projects."
+        }
+    },
+
+    {
+        "skill": {
+            "name": "Leadership",
+            "illustration": "image/icone_lead.png",
+            "text": "During the execution of a project, there is always a project manager. The person in charge must apply all the points discussed so far. Leading a group does not mean that the members belong to us, but rather that we must harmonize the group to bring out the strengths of each individual."
+        }
+    }
+
+]

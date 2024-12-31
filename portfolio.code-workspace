@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../resaweb"
+		},
+		{
+			"path": "../ENT-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ENT-main",
+		"codetogether.virtualCursorJoin": "ownVirtualCursor",
+		"codetogether.virtualCursorRemember": true
+	}
+}
