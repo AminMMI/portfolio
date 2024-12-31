@@ -101,8 +101,8 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    background: rgb(166,225,250);
-    background: linear-gradient(180deg, rgba(166,225,250,1) 0%, rgba(14,107,168,1) 100%);
+    background: linear-gradient(180deg, #a6e1fa 0%, #0e6ba8 100%); 
+    position: relative;
 }
 
 .visible {
@@ -131,7 +131,8 @@ nav * {
 
 nav {
     position: sticky;
-    top: 10px;
+    top: 1px;
+    background-color: #A6E1FA;
 }
 
 .nav__link {
@@ -266,10 +267,6 @@ nav {
 
 .project {
     height: 100vh;
-}
-
-.project {
-    height: 100vh;
     position: relative;
 }
 
@@ -373,8 +370,9 @@ nav {
 /* Skills */
 
 .skills {
-    height: 100vh;
+    height: 100%;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .skills h1 {
@@ -472,6 +470,67 @@ nav {
     z-index: 11;
 }
 
+/* CODE DU FOOTER EN MOBILE FIRST */
+
+.footer {
+    background: rgb(14,107,168);
+    background: linear-gradient(180deg, rgba(14,107,168,1) 0%, rgba(0,28,85,1) 100%);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__container a {
+    text-decoration: none;
+    color: #a6e1fa;
+    font-family: 'Chillax-Medium';
+}
+
+/* CODE DES PAGES PROJETS */
+
+.projet__details {
+    font-family: 'Chillax-Medium';
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.projet__details h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.projet__details a {
+    font-size: 1.4rem;
+    color: #0e6ba8;
+    text-decoration: none;
+    background-color: #00072D;
+    padding: 8px 11px;
+    border-radius: 20px;
+    transition: all 0.8s ease-in-out;
+}
+
+.projet__details a:hover {
+    transform: scale(1.7);   
+}
+
+.projet__details p {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.projet__details img {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -563,7 +622,29 @@ nav {
         align-items: start;
     }
 
+    .projet__details div {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+    }
 
+    .projet__details > div:nth-of-type(2) {
+       flex-direction: row-reverse;
+    }
+    
+
+    .projet__details p {
+        text-align: start;
+        margin-top: 0;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .projet__details img {
+        width: 500px;
+    }
 
 }
 
