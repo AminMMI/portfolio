@@ -85,37 +85,12 @@
 
   typeEffect();
 
-  // Animation text project 
 
-  const point = "..."; // Points à afficher
-  const pointElement = document.getElementById("suspens");
-  let charPointIndex = 0;
-  
-  function typeEffect() {
-    // Ajoute le caractère actuel à l'élément
-    if (charPointIndex < point.length) {
-      pointElement.textContent += point.charAt(charPointIndex);
-    }
-  
-    // Réinitialise l'animation après avoir affiché tous les points
-    if (charPointIndex >= point.length) {
-      charPointIndex = 0; // Recommence depuis le début
-      setTimeout(typeEffect, 500); // Pause avant de recommencer
-    } else {
-      setTimeout(typeEffect, 200); // Ajoute un délai entre chaque point
-    }
-  }
-  
-  // Lance l'effet
-  typeEffect();
-
-  
 
   // Charger le fichier JSON avec fetch()
 fetch('data.json')
 .then(response => response.json())
 .then(skillsData => {
-  // Assurez-vous que le JSON est bien chargé avant de continuer
 
   // Fonction pour afficher les données dans la modal
   document.querySelectorAll('.showDivLink').forEach(link => {
