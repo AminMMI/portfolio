@@ -371,7 +371,6 @@ nav {
 
 .skills {
     height: 100%;
-    position: relative;
     margin-bottom: 100px;
 }
 
@@ -382,11 +381,11 @@ nav {
 
 .skills__container {
     font-family: 'Chillax-Medium', sans-serif ;
-    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .skills__container-web, .skills__container-print, .skills__container-other {
@@ -476,14 +475,13 @@ nav {
     background: rgb(14,107,168);
     background: linear-gradient(180deg, rgba(14,107,168,1) 0%, rgba(0,28,85,1) 100%);
     text-align: center;
-    position: absolute;
     bottom: 0;
     width: 100vw;
 }
 
 .footer__container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .footer__container a {
