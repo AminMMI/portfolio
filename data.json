@@ -3,63 +3,63 @@
         "skill": {
             "name": "HTML",
             "illustration": "image/icone_html.png",
-            "text": "With HTML, I can structure your websites by using various tags wisely. HTML is the first language I learned; it is the foundation of all websites. By mastering this foundation, I can ensure an appropriate structure for any website and provide clear and precise classes for CSS."
+            "text": "Avec HTML, je peux structurer vos sites web en utilisant judicieusement divers balises. HTML est le premier langage que j'ai appris ; c'est la base de tous les sites web. En maîtrisant cette base, je peux garantir une structure appropriée pour n'importe quel site et fournir des classes claires et précises pour le CSS."
         }
     },
     {
         "skill": {
             "name": "CSS",
             "illustration": "image/icone_css.png",
-            "text": "CSS allows me to style your websites while perfectly adhering to the requested design guidelines. Whether it's mobile or desktop sites, they will always be perfectly optimized to adapt to all screen sizes. Additionally, I can add CSS animations to make the website more dynamic."
+            "text": "Le CSS me permet de styliser vos sites web tout en respectant parfaitement les directives de design demandées. Qu'il s'agisse de sites mobiles ou de bureau, ils seront toujours parfaitement optimisés pour s'adapter à toutes les tailles d'écran. De plus, je peux ajouter des animations CSS pour rendre le site plus dynamique."
         }
     },
     {
     "skill": {
         "name": "JavaScript",
         "illustration": "image/icone_js.png",
-        "text": "By using JavaScript, I can create animations that are impossible with CSS alone. I can also use this language to work with data, enhance forms, add styling, and more. JavaScript allows me to be completely versatile."
+        "text": "En utilisant JavaScript, je peux créer des animations impossibles à réaliser uniquement avec du CSS. Je peux aussi utiliser ce langage pour manipuler des données, améliorer les formulaires, ajouter du style et bien plus encore. JavaScript me permet d’être totalement polyvalent."
     }
     },
     {
         "skill": {
             "name": "PHP",
             "illustration": "image/icone_php.svg",
-            "text": "PHP allows me to communicate between the database and the website. With it, I can create dynamic websites with secure login systems. PHP also enables me to develop online booking systems and code using the MVC architecture."
+            "text": "PHP me permet d'assurer la communication entre la base de données et le site web. Grâce à lui, je peux créer des sites web dynamiques avec des systèmes de connexion sécurisés. PHP me permet également de développer des systèmes de réservation en ligne et de coder en utilisant l'architecture MVC."
         }
     },
     {
         "skill": {
             "name": "WordPress",
             "illustration": "image/icone_wp.png",
-            "text": "WordPress is a tool that allows you to create websites without the need for coding. Knowing how to install and configure it, I can create WordPress sites and edit source files to make precise modifications that meet the client's expectations."
+            "text": "WordPress est un outil qui permet de créer des sites web sans avoir besoin de coder. Sachant l’installer et le configurer, je peux concevoir des sites WordPress et modifier les fichiers sources afin d’apporter des ajustements précis répondant aux attentes du client."
         }
     },
     {
         "skill": {
             "name": "Chart.js",
             "illustration": "image/icone_chart.png",
-            "text": "Chart.js is a library that allows me to create all kinds of charts. It is very easy to customize them using the properties provided by the library, which is accessible online. With this library, I can easily create data visualizations and tailor them to specific needs."
+            "text": "Chart.js est une bibliothèque qui me permet de créer toutes sortes de graphiques. Il est très facile de les personnaliser grâce aux propriétés fournies par la bibliothèque, qui est accessible en ligne. Avec cet outil, je peux facilement concevoir des visualisations de données et les adapter à des besoins spécifiques."
         }
     },
     {
         "skill": {
             "name": "Aos.js",
             "illustration": "image/icone_aos.png",
-            "text": "Aos.js is also an online library, used to create scroll animations. Aos.js makes it easy to create dynamic displays with great simplicity. Knowing how to modify its properties to further customize the predefined animations, this library is simple yet highly effective."
+            "text": "AOS.js est également une bibliothèque en ligne, utilisée pour créer des animations au défilement. Elle permet d'afficher des éléments de manière dynamique avec une grande simplicité. Sachant modifier ses propriétés pour personnaliser encore plus les animations prédéfinies, cette bibliothèque est à la fois simple et très efficace."
         }
     },
     {
         "skill": {
             "name": "Gsap.js",
             "illustration": "image/icone_gsap.svg",
-            "text": "A third library: Gsap.js. This library is a bit more complex to use than Aos.js and requires more knowledge about its functionality. It allows for the creation of a wide range of animations, whether on SVG images, text, or scroll effects. It is versatile and accessible."
+            "text": "Une troisième bibliothèque : GSAP.js. Cette bibliothèque est un peu plus complexe à utiliser que AOS.js et demande une meilleure connaissance de son fonctionnement. Elle permet de créer une grande variété d'animations, que ce soit sur des images SVG, du texte ou des effets au défilement. Polyvalente et accessible, elle offre un contrôle précis sur les animations."
         }
     },
     {
         "skill": {
             "name": "GIT",
             "illustration": "image/icone_git.png",
-            "text": "GIT is the tool that allows collaboration with other developers. It is essential for teamwork. With GIT, we update the code online and keep ourselves up to date with the progress of others. Knowing the basics of GIT is crucial."
+            "text": "GIT est l'outil qui permet de collaborer avec d'autres développeurs. Il est indispensable pour le travail en équipe. Avec GIT, on met à jour le code en ligne et on suit l'avancement des autres en temps réel. Connaître les bases de GIT est essentiel."
         }
     },
 
@@ -67,7 +67,7 @@
         "skill": {
             "name": "Figma",
             "illustration": "image/icone_figma.svg",
-            "text": "Figma is a highly effective digital creation tool for designing website mockups or social media posts. With a solid understanding of this platform, I am able to create social media post prototypes and website mockups."
+            "text": "Figma est un outil de création numérique très efficace pour concevoir des maquettes de sites web ou des publications sur les réseaux sociaux. Avec une bonne maîtrise de cette plateforme, je suis capable de créer des prototypes de publications sur les réseaux sociaux et des maquettes de sites web."
         }
     },
 
@@ -75,7 +75,7 @@
         "skill": {
             "name": "Canva",
             "illustration": "image/icone_canva.png",
-            "text": "Like Figma, Canva is also a digital creation tool. Canva allows you to create flowcharts, social media posts, slides, PDF documents, video edits, and more. While Canva doesn't offer as much freedom as Figma in creation, it is very versatile and provides great support for the user."
+            "text": "Tout comme Figma, Canva est également un outil de création numérique. Canva permet de créer des diagrammes, des publications sur les réseaux sociaux, des slides, des documents PDF, des montages vidéo, et bien plus encore. Bien que Canva n'offre pas autant de liberté créative que Figma, il est très polyvalent et offre un excellent support pour l'utilisateur."
         }
     },
 
@@ -83,7 +83,7 @@
         "skill": {
             "name": "PhotoShop",
             "illustration": "image/icone_ps.png",
-            "text": "With Photoshop, I can manage images to their fullest potential. I can reduce their size, weight, adjust color settings, and more. All of these tasks are easy to perform with this software, including changing formats while maintaining good image quality."
+            "text": "Avec Photoshop, je peux gérer les images dans toute leur richesse. Je peux réduire leur taille, leur poids, ajuster les paramètres de couleur, et bien plus encore. Toutes ces tâches sont faciles à réaliser avec ce logiciel, y compris le changement de format tout en maintenant une bonne qualité d'image."
         }
     },
 
@@ -91,7 +91,7 @@
         "skill": {
             "name": "InDesign",
             "illustration": "image/icone_id.png",
-            "text": "InDesign is very useful for creating PRINT documents. Whether it's posters or other materials, it's certainly one of the most comprehensive tools. However, it is becoming somewhat obsolete and isn't as intuitive as Figma."
+            "text": "InDesign est très utile pour la création de documents imprimés. Que ce soit pour des affiches ou d'autres supports, c'est certainement l'un des outils les plus complets. Néanmoins il reste assez difficile à prendre en main et en suis réduit qu'à de simple visuel avec."
         }
     },
 
@@ -99,7 +99,7 @@
         "skill": {
             "name": "Creativity",
             "illustration": "image/icone_crea.png",
-            "text": "With a creative mindset, I know how to produce and create using various sources of inspiration. While I enjoy having original designs, I always stay on a professional path to ensure my work remains accessible and appealing to clients."
+            "text": "Avec un esprit créatif, je sais produire et créer en utilisant diverses sources d'inspiration. Bien que j'aime avoir des designs originaux, je reste toujours sur un chemin professionnel pour m'assurer que mon travail reste accessible et attrayant pour les clients."
         }
     },
 
@@ -107,7 +107,7 @@
         "skill": {
             "name": "Flexibility",
             "illustration": "image/icone_flex.png",
-            "text": "Because it's important to adapt to any situation, I know how to switch from one project to another and work on multiple tasks at the same time. Whether it's for teamwork or individual work, I can easily collaborate with others or work alone."
+            "text": "Parce qu'il est important de s'adapter à chaque situation, je sais passer d'un projet à un autre et travailler sur plusieurs tâches en même temps. Que ce soit pour un travail en équipe ou individuel, je peux facilement collaborer avec les autres ou travailler seul."
         }
     },
 
@@ -115,7 +115,7 @@
         "skill": {
             "name": "Autonomy",
             "illustration": "image/icone_auto.png",
-            "text": "It is important to take initiative and not wait for requests to improve projects or get ahead of what's to be done. Always thinking ahead, I always have ideas to contribute and I am not afraid to share them."
+            "text": "Il est important de prendre des initiatives et de ne pas attendre les demandes pour améliorer les projets ou anticiper ce qui doit être fait. Toujours en train de penser à l'avance, j'ai toujours des idées à partager et je n'ai pas peur de les proposer."
         }
     },
 
@@ -123,7 +123,7 @@
         "skill": {
             "name": "Listening",
             "illustration": "image/icone_list.png",
-            "text": "In teamwork, it is very important to listen to the opinions of others. Whether as a team member or as a project manager, it is essential to pay close attention to everyone so that each person feels heard. Listening is crucial for the good harmony of a group."
+            "text": "Dans le travail en équipe, il est très important d'écouter les avis des autres. Que ce soit en tant que membre d'équipe ou en tant que chef de projet, il est essentiel de prêter une attention particulière à chacun pour que chaque personne se sente écoutée. L'écoute est cruciale pour la bonne harmonie d'un groupe."
         }
     },
 
@@ -131,7 +131,7 @@
         "skill": {
             "name": "Eloquence",
             "illustration": "image/icone_elo.png",
-            "text": "In addition to knowing how to listen, it is very important to express oneself properly in oral communication. Whether it's to sell a product, explain a project, resolve conflicts... oral communication is an art that I master perfectly and is useful in many situations."
+            "text": "En plus de savoir écouter, il est très important de s'exprimer correctement en communication orale. Que ce soit pour vendre un produit, expliquer un projet, résoudre des conflits... la communication orale est un art que je maîtrise parfaitement et qui est utile dans de nombreuses situations."
         }
     },
 
@@ -139,7 +139,7 @@
         "skill": {
             "name": "Respect",
             "illustration": "image/icone_resp.png",
-            "text": "Even if opinions differ, it is very important to respect the work and the individuals of others. A group that does not respect itself is destined to collapse, regardless of the individual abilities of each member."
+            "text": "Même si les avis diffèrent, il est très important de respecter le travail et les individus des autres. Un groupe qui ne se respecte pas est destiné à s'effondrer, quelles que soient les capacités individuelles de chaque membre."
         }
     },
 
@@ -147,7 +147,7 @@
         "skill": {
             "name": "Communication",
             "illustration": "image/icone_comm.png",
-            "text": "One should never hesitate to address issues within a group before they take up too much space and hinder the progress of the project. Communication also means keeping other group members regularly informed about the progress of the projects."
+            "text": "Il ne faut jamais hésiter à aborder les problèmes au sein d’un groupe avant qu’ils ne prennent trop de place et n’entravent l’avancement du projet. La communication, c'est aussi tenir régulièrement les autres membres du groupe informés de l'avancement des projets."
         }
     },
 

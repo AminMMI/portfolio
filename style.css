@@ -101,8 +101,8 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    background: linear-gradient(180deg, #a6e1fa 0%, #0e6ba8 100%); 
     position: relative;
+    background-color: #000000;
 }
 
 .visible {
@@ -113,43 +113,28 @@ body {
     visibility: hidden;
 }
 
+/* Background étoile */
+
+#sky {
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    pointer-events: none; 
+  }
+
 h1, h2, h3 {
-    font-family: 'Chillax-Bold', sans-serif;
-    color: #001C55;
+    font-family: 'Chillax-SemiBold', sans-serif;
+    color: #d2d6dd;
     font-size: 2rem;
 }
 
-/* Bar Nav */
+
+
 
 header {
     height: 100vh;
-}
-
-nav * {
-    font-family: 'Chillax-Regular', sans-serif;
-}
-
-nav {
-    position: sticky;
-    top: 1px;
-    background-color: #A6E1FA;
-}
-
-.nav__link {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 7px 0px;
-    margin: 0;
-    list-style-type: none;
-}
-
-.nav__link a {
-    text-decoration: none;
-    color: #001C55;
-}
-
-.container__nav {
-    position: relative;
 }
 
 .scrolled {
@@ -157,17 +142,22 @@ nav {
     color: #A6E1FA;
 }
 
+
+
 /* TITRE */
+     
+
 .accueil__title {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     text-shadow: 1px 1px 2px white;
     position: relative;
     top: 300px;
 }
 
 .accueil__title-h1 {
-    text-align: center;
     margin: 0;
 }
 
@@ -181,10 +171,19 @@ nav {
     animation: translate 0.1s ease-in-out forwards;
 }
 
-#titre2 {
-    animation: blink 0.5s step-end infinite alternate;
-    overflow: hidden;
+a {
+    text-decoration: none;
+    scroll-behavior: smooth;
+    transition: ease-in-out;
 }
+
+.accueil__img {
+    width: 25px;
+    height: 41px;
+    animation: floating 2s infinite;
+    
+}
+
 
 /* accueil */
 
@@ -234,13 +233,14 @@ nav {
 .presentation__container p {
     font-family: 'Chillax-Regular', sans-serif;
     font-size: 1.2rem;
+    color: #dfe2e9;
 }
 
 .presentation__container a {
     font-family: 'Chillax-Regular', sans-serif;
     font-size: 1.4rem;
     text-decoration: none;
-    color: #0A2472;
+    color: #d1d4da;
     border: solid #0A2472 1px;
     border-radius: 10px;
     padding: 5px 7px;
@@ -306,6 +306,7 @@ nav {
     border-top-right-radius: 20px;
     background-color: #A6E1FA;
     padding: 5px 7px;
+    color: #00072D;
 }
 
 
@@ -336,8 +337,10 @@ nav {
 .project__container-11,
 .project__container-21,
 .project__container-31 {
-    -webkit-box-shadow: 0px 0px 25px 3px #00072D; 
-    box-shadow: 0px 0px 25px 3px #00072D;
+    -webkit-box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
+    -moz-box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
+    box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
+    animation: floating 2s infinite;
     transition: all 0.7s;
 }
 
@@ -411,7 +414,7 @@ nav {
 }
 
 .skills__container li a {
-    color: #001C55;
+    color: #1c1d1e;
 
 }
 
@@ -453,6 +456,10 @@ nav {
     border: 1px solid black;
   }
 
+  .webskills__content h2 {
+    color: #262525;
+  }
+
 .webskills__content-img {
     height: 100px;
     width: 100px;
@@ -472,11 +479,10 @@ nav {
 /* CODE DU FOOTER EN MOBILE FIRST */
 
 .footer {
-    background: rgb(14,107,168);
-    background: linear-gradient(180deg, rgba(14,107,168,1) 0%, rgba(0,28,85,1) 100%);
     text-align: center;
     bottom: 0;
     width: 100vw;
+    margin-bottom: 30px;
 }
 
 .footer__container {
@@ -571,11 +577,13 @@ nav {
 }
 
 @media screen and (min-width: 1023px) {
-    .nav__link {
-        font-size: 1.5rem;
-    }
+   
 
     .accueil__title-h1 {
+        font-size: 4em;
+    }
+
+    .accueil__title-h2 {
         font-size: 3em;
     }
 
@@ -613,6 +621,8 @@ nav {
         margin-bottom: 50px;
     }
 
+    
+
     .skills__container {
         flex-direction: row;
         justify-content: center;
@@ -626,6 +636,7 @@ nav {
         width: 80%;
         margin: auto;
         align-items: center;
+        
     }
 
     .projet__details > div:nth-of-type(2) {
@@ -658,11 +669,19 @@ nav {
     }
 }
 
-@keyframes blink {
-    50% {
-      border-color: transparent;
+@keyframes floating {
+    0% {
+        transform: translatey(0px);
     }
-  }
+
+    50% {
+        transform: translatey(-10px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
 
   @keyframes rotate {
     0% {

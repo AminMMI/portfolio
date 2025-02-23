@@ -1,4 +1,53 @@
+const sky = document.getElementById('sky');
+  
+function createCube() {
+  const cube = document.createElement('div');
+  const size = Math.random() * 3 + 1; // Random size between 1px and 4px
+  const xPos = Math.random() * window.innerWidth; // Random x position
+  const yPos = Math.random() * window.innerHeight; // Random y position
+  const animationDuration = Math.random() * 2 + 2; // Random duration between 2 and 4 seconds
+  const delay = Math.random() * 4; // Random delay for the animation start
 
+  cube.style.position = 'absolute';
+  cube.style.width = `${size}px`;
+  cube.style.height = `${size}px`;
+  cube.style.backgroundColor = '#fff';
+  cube.style.opacity = Math.random(); // Random opacity
+  cube.style.top = `${yPos}px`;
+  cube.style.left = `${xPos}px`;
+  cube.style.borderRadius = '50%'; // Transform the square into a circle
+  cube.style.animation = `twinkleAndMove ${animationDuration}s infinite ease-in-out ${delay}s`;
+
+  sky.appendChild(cube);
+}
+
+// Create a number of cubes (e.g., 200 cubes)
+for (let i = 0; i < 200; i++) {
+  createCube();
+}
+
+
+// CSS animation for the twinkling effect and movement
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes twinkleAndMove {
+0% {
+transform: translateZ(0) scale(0.5);
+opacity: 0;
+}
+40% {
+opacity: 1;
+}
+70% {
+transform: translateZ(500px) scale(1.5);
+opacity: 0.8;
+}
+100% {
+transform: translateZ(1000px) scale(2);
+opacity: 0;
+}
+`;
+document.head.appendChild(style);
 
   
   function splitLetters(text) {
@@ -29,57 +78,41 @@
   }
 
   // Animation des lettres pour titre1
-  gsap.to("#titre1 span", {
-      duration: 1,
-      rotateY: 360,
-      stagger: 0.1,
-      ease: "power2.inOut",
-  });
+ // Sélectionne toutes les lettres
+const letters = document.querySelectorAll("#titre1 span");
 
-  // Animation de réécriture du h1
+// Positionne chaque lettre aléatoirement avant l'animation
+letters.forEach(letter => {
+    gsap.set(letter, {
+        x: (Math.random() - 0.5) * 1000, 
+        y: (Math.random() - 0.5) * 1000, 
+        opacity: 0
+    });
+});
 
-  const titles = ["Web Developerr", "Creative Coderr", "Problem Solverr"];
-  const textElement = document.getElementById("titre2");
-  let currentIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
+// Animation pour ramener les lettres à leur position d'origine
+gsap.to(letters, {
+    duration: 1,
+    x: 0,
+    y: 0,
+    opacity: 1,
+    stagger: 0.1,
+    ease: "power2.out"
+});
 
-  function typeEffectTitles() {
-    const currentTitle = titles[currentIndex];
-    
-    if (!isDeleting) {
-      charIndex++;
-      if (charIndex === currentTitle.length) {
-        isDeleting = true;
-        setTimeout(typeEffectTitles, 1500); // Pause before deleting
-        return;
-      }
-    } else {
-      charIndex--;
-      if (charIndex === 0) {
-        isDeleting = false;
-        currentIndex = (currentIndex + 1) % titles.length;
-      }
-    }
-    
-    textElement.textContent = currentTitle.slice(0, charIndex);
-    setTimeout(typeEffectTitles, isDeleting ? 50 : 100); // Adjust speed
-  }
-
-  typeEffectTitles();
 
 
   // Animation texte de présentation
 
-  const texte = "Hi! My name is Amin Benazzouz. I'm a young student in the field of web development. I'm passionate about web development, creative design, and communication. Explore my website to discover my various projects! And don't hesitate to contact me for any collaboration. See you soon!";
+  const texte = "Un étudiant en 2ème année de but mmi ! Âgé de 21 ans, je continue ma formation en me spécialisant dans le développement web. J'aime ce que je fais au sein de l'IUT et m'épanouis pleinement dans ce domaine. Actuellement, je suis activement en recherche de stage de 2 mois minimum qui commencerait en Avril 2025. Cela me permettrait de gagner de l'expérience en entreprise, parfaire mes connaissances et surtout valider mon année ! En espérant que mon portfolio vous plaise, je vous souhaite une bonne visite !";
   const texteElement = document.getElementById("presentation-text");
-  let charTextIndex = 0; // Correctly initialized here
+  let charTextIndex = 0; 
 
   function typeEffect() {
     if (charTextIndex < texte.length) {
       texteElement.textContent += texte.charAt(charTextIndex);
-      charTextIndex++; // Increment the character index
-      setTimeout(typeEffect, 20); // Call typeEffect again after a delay
+      charTextIndex++; 
+      setTimeout(typeEffect, 20); 
     }
   }
 
