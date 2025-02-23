@@ -113,6 +113,12 @@ body {
     visibility: hidden;
 }
 
+/* Code curseur */
+
+element {
+    cursor: url('image/Ellipse\ 35.png'), pointer;
+}
+
 /* Background étoile */
 
 #sky {
@@ -511,12 +517,18 @@ a {
 
 .projet__details a {
     font-size: 1.4rem;
-    color: #0e6ba8;
+    color: #d7dcdf;
     text-decoration: none;
     background-color: #00072D;
     padding: 8px 11px;
     border-radius: 20px;
     transition: all 0.8s ease-in-out;
+    font-family: 'Chillax-Semibold', sans-serif;
+}
+
+.projet__details ul {
+    font-family: 'Chillax-Semibold', sans-serif;
+    color: #d7dcdf;
 }
 
 .projet__details a:hover {
@@ -527,6 +539,7 @@ a {
     width: 90%;
     margin: auto;
     margin-bottom: 20px;
+    color: #a6e1fa;
 }
 
 .projet__details img {
@@ -691,3 +704,17 @@ a {
         transform: rotate(360deg);
     }
 }
+
+ @keyframes scale {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+ }

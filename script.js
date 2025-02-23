@@ -150,3 +150,4 @@ fetch('data.json')
 .catch(error => {
   console.error('Erreur lors du chargement du fichier JSON:', error);
 });
+
