@@ -190,12 +190,11 @@ a {
 /* accueil */
 
 .presentation {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-bottom: 200px;
 }
 
 .presentation h1 {
@@ -264,13 +263,13 @@ a {
     text-align: center;
     margin: auto;
     width: 90%;
+    margin-bottom: 50px;
 }
 
 /* PROJET */
 
 .project {
-    height: 100vh;
-    position: relative;
+    height: 100%;
 }
 
 .project h1 {
@@ -292,6 +291,8 @@ a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-radius: 20px;
+    text-shadow: 0px 0px 7px #EFE8DA;
+
 }
 
 
@@ -333,10 +334,7 @@ a {
 
 .project__container-1, 
 .project__container-2, 
-.project__container-3,
-.project__container-11,
-.project__container-21,
-.project__container-31 {
+.project__container-3 {
     -webkit-box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
     -moz-box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
     box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
@@ -369,17 +367,14 @@ a {
 }
 
 .project__container-2:hover {
-    background-position: center bottom;
-    background-size: cover;
+
     color: #A6E1FA;
     transform: translateY(-10px);
 
 }
 
 .project__container-3:hover {
-    background-image: url(image/dna.png); /* Image de fond */
-    background-position: center bottom;
-    background-size: cover;
+
     color: #A6E1FA;
     transform: translateY(-10px);
 }
@@ -387,8 +382,8 @@ a {
 /* Slider */
 
 .js-slider {
-    width: 750px;
-    height: 450px;
+    width: 230px;
+    height: 150px;
     margin: auto;
     overflow: hidden;
 }
@@ -404,8 +399,8 @@ a {
 .js-pic {
     flex-shrink: 0;
     position: relative;
-    width: 750px;
-    height: 450px;
+    width: 230px;
+    height: 150px;
     padding: 0;
 }
 
@@ -607,6 +602,17 @@ a {
     .accueil__title-h1 {
         font-size: 2em;
     }
+
+    .js-pic {
+        width: 350px;
+        height: 220px;
+    }
+
+    .js-slider {
+        width: 350px;
+        height: 220px;
+      
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -634,6 +640,16 @@ a {
 
     .presentation__container p {
         width: 450px;
+    }
+
+    .js-pic {
+        width: 500px;
+        height: 312px;
+    }
+
+    .js-slider {
+        width: 500px;
+        height: 312px;
     }
 }
 
@@ -682,7 +698,15 @@ a {
         margin-bottom: 50px;
     }
 
-    
+    .js-pic {
+        width: 750px;
+        height: 450px;
+    }
+
+    .js-slider {
+        width: 750px;
+        height: 450px;
+    }
 
     .skills__container {
         flex-direction: row;
