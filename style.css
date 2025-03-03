@@ -113,11 +113,7 @@ body {
     visibility: hidden;
 }
 
-/* Code curseur */
 
-element {
-    cursor: url('image/Ellipse\ 35.png'), pointer;
-}
 
 /* Background étoile */
 
@@ -216,6 +212,7 @@ a {
     height: 80%;
     width: 70%;
     position: relative;
+    opacity: 0;
     max-height: 500px;
     min-height: 275px;
     max-width: 350px;
@@ -290,11 +287,8 @@ a {
 }
 
 .project__container div {
-    width: 80%;
-    max-width: 250px;
     text-align: center;
     margin-bottom: 50px;
-    background-color: #0E6BA8;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-radius: 20px;
@@ -346,24 +340,39 @@ a {
     -webkit-box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
     -moz-box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
     box-shadow: 1px 1px 28px 0px rgba(245,237,245,0.92);
-    animation: floating 2s infinite;
     transition: all 0.7s;
+    background-color: #0E6BA8;
+
 }
 
-.project__container-1:hover {
+.project__container-1 {
     background-image: url(image/Cicatriz.png); /* Image de fond */
     background-position: center bottom;
     background-size: cover;
-    color: #A6E1FA;
-    transform: translateY(-20px);
 }
 
-.project__container-2:hover {
+.project__container-2 {
     background-image: url(image/resaweb.png); /* Image de fond */
     background-position: center bottom;
     background-size: cover;
+}
+
+.project__container-3 {
+    background-image: url(image/dna.png);
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.project__container-1:hover {
     color: #A6E1FA;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
+}
+
+.project__container-2:hover {
+    background-position: center bottom;
+    background-size: cover;
+    color: #A6E1FA;
+    transform: translateY(-10px);
 
 }
 
@@ -372,9 +381,48 @@ a {
     background-position: center bottom;
     background-size: cover;
     color: #A6E1FA;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
 }
 
+/* Slider */
+
+.js-slider {
+    width: 750px;
+    height: 450px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.js-pics {
+    position: relative;
+    display: flex;
+    width: max-content;
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+.js-pic {
+    flex-shrink: 0;
+    position: relative;
+    width: 750px;
+    height: 450px;
+    padding: 0;
+}
+
+.arrow-left img, .arrow img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.arrow-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: rgba(127, 255, 212, 0);
+}
 
 /* Skills */
 

@@ -63,6 +63,7 @@ document.head.appendChild(style);
   const title1 = document.getElementById('titre1'); 
   const title2 = document.getElementById('titre2'); 
   const title3 = document.getElementById('title__presentation');
+  const image = document.getElementById('image');
 
 
   if (title1) {
@@ -73,9 +74,6 @@ document.head.appendChild(style);
       title2.innerHTML = splitLetters(title2.textContent);
   }
 
-  if (title3) {
-      title3.innerHTML = splitLetters(title3.textContent);
-  }
 
   // Animation des lettres pour titre1
  // Sélectionne toutes les lettres
@@ -100,7 +98,17 @@ gsap.to(letters, {
     ease: "power2.out"
 });
 
-
+// Animation pour l'image 
+gsap.to(image, {
+  opacity: "1",
+  ease: "power2.out",
+scrollTrigger: {
+  trigger: image,
+  start: "top 50%",
+  end: "top 40%",
+  scrub: 1, 
+}
+});
 
   // Animation texte de présentation
 
@@ -115,8 +123,70 @@ gsap.to(letters, {
       setTimeout(typeEffect, 20); 
     }
   }
+ typeEffect();
 
-  typeEffect();
+//  Slider des projets
+
+var position = 0;
+var sliderWidth = document.querySelector('.js-slider').offsetWidth;
+var picsWidth = document.querySelector('.js-pics').offsetWidth;
+var pics = document.querySelector('.js-pics');
+
+
+position += sliderWidth;
+pics.style.left = "-" + position + "px";
+
+function decaleGauche() {
+    position += sliderWidth;
+    if (position >= picsWidth - sliderWidth) {
+        retourDebut();
+    } else {
+        pics.style.left = '-' + position + 'px';
+    }
+}
+
+function decaleDroite() {
+    position -= sliderWidth;
+    if (position <= 0) {
+        allerFin();
+    } else {
+        pics.style.left = '-' + position + 'px';
+    }
+}
+
+function retourDebut() {
+    pics.style.left = '-' + position + 'px';
+    setTimeout(function() {
+        position = 0;
+        position += sliderWidth;
+        pics.style.left = "-" + position + 'px';
+        pics.style.transition = "0s";
+        setTimeout(function() {
+            pics.style.transition = ""; 
+        }, 10);
+    }, 350);
+}
+
+function allerFin() {
+    pics.style.left = "-" + position + 'px';
+    setTimeout(function() {
+        position = picsWidth - sliderWidth;
+        position -= sliderWidth;
+        pics.style.left = "-" + position + 'px';
+        pics.style.transition = "0s";
+        setTimeout(function() {
+            pics.style.transition = ""; 
+        }, 10);
+    }, 350);
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowLeft") {
+      decaleDroite();
+  } else if (event.key === "ArrowRight") {
+      decaleGauche();
+  }
+});
 
 
 

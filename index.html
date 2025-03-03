@@ -28,10 +28,10 @@
 
     <main>   
         <div class="presentation" id="presentation">
-            <h1>Mon Univers</h1>
+            <h1 id="title__presentation">Mon Univers</h1>
             <div class="presentation__container">
                 <div class="image-container">
-                    <img class="image" id="profil" src="image/photo.jpg">
+                    <img class="image" id="image" src="image/photo.jpg">
                 </div>
                 <div class="text__container">
                     <h2 id="title__presentation">Qui suis je ?</h2>
@@ -46,55 +46,55 @@
             <h1>Projet</h1>
 
             <div class="project__container">
-                <div class="project__container-1">
-                    <h2>Cicatriz</h2>
-                    <p>Découvrez ce projet </p>
-                    <a href="project/cicatriz.html">
-                    <img src="image/flèche.png">
-                    </a>
-                </div>
 
-                <div class="project__container-2">
-                    <h2>Resaweb</h2>
-                    <p>Découvrez ce projet </p>
-                    <a href="project/resaweb.html">
-                    <img src="image/flèche.png">
-                    </a>
-                </div>
+                <div class="js-slider">
+                    <div class="js-pics">
 
-                <div class="project__container-3">
-                    <h2>DNA</h2>
-                    <p>Découvrez ce projet </p>
-                    <a href="project/dna.html">
-                    <img src="image/flèche.png">
-                    </a>
-                </div>
-            </div>
+                        <!-- slide clone -->
+                        <div class="project__container-3 js-pic">
+                            <h2>DNA</h2>
+                            <p>Découvrez ce projet </p>
+                            <a href="project/cicatriz.html">
+                            <img src="image/flèche.png">
+                            </a>
+                        </div>
 
-            <div class="project__container hidden">
-                <div class="project__container-11">
-                    <a>
-                    <h2>Attendez...<span id="suspens"></span></h2>
-                    <p>Un nouveau projet arrive...</p>
-                    <img src="image/logo_wait.png">
-                    </a>
-                </div>
+                        <!-- slide réel -->
+                        <div class="project__container-1 js-pic">
+                            <h2>Cicatriz</h2>
+                            <p>Découvrez ce projet </p>
+                            <a href="project/cicatriz.html">
+                            <img src="image/flèche.png">
+                            </a>
+                        </div>
+        
+                        <div class="project__container-2 js-pic">
+                            <h2>Resaweb</h2>
+                            <p>Découvrez ce projet </p>
+                            <a href="project/resaweb.html">
+                            <img src="image/flèche.png">
+                            </a>
+                        </div>
+        
+                        <div class="project__container-3 js-pic">
+                            <h2>DNA</h2>
+                            <p>Découvrez ce projet </p>
+                            <a href="project/dna.html">
+                            <img src="image/flèche.png">
+                            </a>
+                        </div>
 
-                <div class="project__container-21">
-                    <a>
-                    <h2>attendez...</h2>
-                    <p>Un nouveau projet arrive...</p>
-                    <img src="image/logo_wait.png">
-                    </a>
+                        <!-- Slider clone -->
+                        <div class="project__container-1 js-pic">
+                            <h2>Cicatriz</h2>
+                            <p>Découvrez ce projet </p>
+                            <a href="project/dna.html">
+                            <img src="image/flèche.png">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="project__container-31">
-                    <a>
-                    <h2>Attendez...</h2>
-                    <p>Un nouveau projet arrive...</p>
-                    <img src="image/logo_wait.png">
-                    </a>
-                </div>
+                
             </div>
         </div>
         
@@ -172,7 +172,8 @@
     <script>
         AOS.init();
       </script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-    <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>   
+<script src="script.js"></script>
 </body>
 </html>
