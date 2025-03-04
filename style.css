@@ -195,6 +195,7 @@ a {
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .presentation h1 {
@@ -276,6 +277,7 @@ a {
     font-size: 3rem;
     text-align: center;
     text-decoration: none;
+    position: relative;
 }
 
 .project__container {
@@ -287,7 +289,7 @@ a {
 
 .project__container div {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-radius: 20px;
@@ -402,19 +404,16 @@ a {
     width: 230px;
     height: 150px;
     padding: 0;
+    margin-bottom: 0;
 }
 
-.arrow-left img, .arrow img {
+.arrow-left img, .arrow-right img {
     width: 30px;
     height: 30px;
 }
 
 
-.arrow-right {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+.arrow-right, .arrow-left {
     border: none;
     background-color: rgba(127, 255, 212, 0);
 }
@@ -692,7 +691,7 @@ a {
     }
 
     .project__container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         visibility: visible;
         margin-bottom: 50px;
