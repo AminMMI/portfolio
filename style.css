@@ -423,6 +423,12 @@ a {
 .skills {
     height: 100%;
     margin-bottom: 100px;
+    font-family: 'Chillax-Medium', sans-serif ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
 .skills h1 {
@@ -430,43 +436,35 @@ a {
     text-align: center;
 }
 
-.skills__container {
-    font-family: 'Chillax-Medium', sans-serif ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.skills h2 {
+    color: #0A2472;
 }
 
-.skills__container-web, .skills__container-print, .skills__container-other {
+.skills__container-div {
+    border: #A6E1FA solid;
+    height: 30%;
+    width: 90%;
     text-align: center;
+    background-color: white;
     padding: 0;
     width: 90%;
-    max-width: 300px;
+    overflow-x: scroll;
+    margin-bottom: 30px;
 }
 
-.skills__container-web ul, .skills__container-print ul, .skills__container-other ul {
-    padding: 20px;
+.skills__container-div section {
+    display: flex;
+    flex-direction: column;
 }
 
-.skills__container li {
-    text-align: center;
-    list-style-type: none;
-    background-color: white;
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
+.skills img {
+    width: 75px;
+    height: 75px;
+    margin: 15px;
 }
 
-.skills__container li a {
-    color: #1c1d1e;
 
-}
-
-.skills__container li:hover {
+.skills img:hover {
     transform: scale(1.1);
 }
 
@@ -482,13 +480,13 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* transition: all .4s; */
+    background-color: rgba(10, 36, 114, 0.7);
 }
 
 .webskills__container:target {
     visibility: visible;
     opacity: 1;
-  }
+}
 
 .webskills__content {
     position: relative;
@@ -502,11 +500,11 @@ a {
     font-family: 'Chillax-Regular', sans-serif;
     z-index: 10;
     border: 1px solid black;
-  }
+}
 
   .webskills__content h2 {
     color: #262525;
-  }
+}
 
 .webskills__content-img {
     height: 100px;
@@ -708,7 +706,7 @@ a {
     }
 
     .skills__container {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         position: relative;
         align-items: start;
